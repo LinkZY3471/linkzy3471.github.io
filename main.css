@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'font';
+    src: url(fonts/font.ttf);
+}
+body{
+    cursor:url('Image/cursor.png'),auto !important;
+    font-family: "font", sans-serif;
+}
+
+#map{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 70%;
+}
+#viewDiv {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 50%;
+
+}
+#viewDiv2D {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 50%;
+    float:left;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+img {
+    horiz-align: center;
+}
+.bottomLogo{
+    cursor:url('Image/cursor-finger.png') 13 1,auto;
+}
+
+#logoWidget {
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+}
+#labelWidget {
+    width: 34px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    cursor:url('Image/cursor-finger.png') 13 1,auto;;
+}
+#soundWidget {
+    width: 34px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    cursor:url('Image/cursor-finger.png') 13 1,auto;;
+}
+#homeWidget {
+    width: 34px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    cursor:url('Image/cursor-finger.png') 13 1,auto;;
+}
+#compassWidget {
+     width: 34px;
+     background-color: rgba(0, 0, 0, 0);
+     box-shadow: none;
+     cursor:url('Image/cursor-finger.png') 13 1,auto;;
+ }
+
+
+#loading {
+    position: absolute;
+    background: url("Image/boot.png");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: block;
+    z-index: 100;
+    text-align: center;
+}
+
+#spin {
+    position: relative;
+    top: 40%;
+    width: 100px;
+    height: 100px;
+}
+
+#image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.video {
+    text-align: center;
+    display: none;
+}
+#sidePanelInfo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 28.9%;
+    max-height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.84);
+    padding: 0.5em;
+    line-height: 1.5em;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 0 5px 15px rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(50px);
+    display: block;
+}
+
+/*去除滚动条*/
+#sidePanelInfo::-webkit-scrollbar {
+    display: none;
+}
+
+#sidePanelInfo > p {
+    text-indent: 2em;
+}
+
+#sidePanelInfo > h2, h1 {
+    text-align: left;
+}
+
+#fin {
+    text-align: center;
+    font-size: 20px;
+}
+
+.map-icon {
+    height: 20px;
+    vertical-align: middle;
+}
+
+.title {
+    cursor:url('Image/cursor-finger.png') 13 1,auto;;
+    padding: 1.5em 0 0.5em;
+    margin: 0;
+    font-weight: bold;
+}
+
+.indicator {
+    cursor:url('Image/cursor-finger.png') 13 1,auto;
+    border: 2px dashed #ff8e00;
+}
+
+.indicator:hover {
+    border: 2px solid #ff8e00;
+}
+
+footer {
+    color: rgba(255, 255, 255, 0.84);
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    text-align: left;
+    font-size: 16px;
+}
+
+footer a {
+    color: rgb(255, 142, 0);
+    font-weight: bold;
+    text-decoration: none;
+    cursor:url('Image/cursor-finger.png') 13 1,auto;
+}
+
+#videoPanel {
+    position: fixed;
+    top: 200px;
+    left: 20px;
+    border-radius: 5px;
+}
+
+#bottomPanel {
+    position: absolute;
+    bottom:0;
+    left:40%;
+    right:40%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.84);
+    padding: 0.5em;
+    letter-spacing: 20px;
+    box-shadow: 0 5px 15px rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(50px);
+    border-radius: 20px;
+    display: block;
+}
+
+/*去除view拖动时的边框*/
+.esri-view .esri-view-surface--inset-outline:focus::after {
+    outline: auto 0px Highlight !important;
+    outline: auto 0px -webkit-focus-ring-color !important;
+}
+
+/*改变view拖动时鼠标样式*/
+.esri-view-surface[data-interacting="true"] {
+    cursor:url('Image/arrows.png') 16 16,auto !important;
+}
+

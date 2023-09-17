@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>塞尔达传说：旷野之息 回忆地图</title>
+    <link rel="icon" href="Image/head.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css">
+    <script src="https://js.arcgis.com/4.26/"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+<div id="image"></div>
+<div id="loading">
+    <img src="Image/loading-spin.svg" alt="Loading icon" id="spin"/>
+</div>
+<div id="map">
+    <div id="viewDiv2D"></div>
+    <div id="viewDiv"></div>
+</div>
+<div id="sidePanelInfo">
+    <div id="content">
+        <h1>塞尔达传说：旷野之息</h1>
+        <h2>回忆地图</h2>
+        <a href="#000" id="00"></a>
+        <p>
+            海拉鲁王国的历史是一部从远古时代开始，便接连蒙受盖侬这一灾厄入侵的历史。灾厄盖侬是太古时代，在海拉鲁诞生的魔王，他化为怨念的姿态，每隔一段时间便会复活。
+            每到那时，拥有勇者之魂的人就会和继承了女神之血的神圣公主一起为海拉鲁夺回和平。一百年前，灾厄盖侬携其巨大阴谋卷土重来，给海拉鲁大陆蒙上前所未有的巨大阴云。
+            让我们一起重拾当时的回忆......
+        </p>
+
+        <a href="#100" id="01"></a>
+        <p class="title 01" id="000"><span class="indicator">EX#1英杰力巴尔之诗 <img src="Image/map.png"
+                                                                                     class="map-icon"/></span></p>
+        <div class="video" id="0">
+            <video width="100%" id="v0" height="100%" controls>
+                <source src="Video/19.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <p>
+            为了选出操纵神兽瓦·梅德的英杰，塞尔达造访了利特族战士力巴尔所在之处。她在那里窥见了力巴尔出人意料的一面，亲睹他不负英杰之名、令人彻底折服的弓术。
+        </p>
+
+        <a href="#200" id="02"></a>
+        <p class="title 02" id="100"><span class="indicator">EX#2英杰达尔克尔之诗 <img src="Image/map.png"
+                                                                                       class="map-icon"/></span></p>
+        <div class="video" id="1">
+            <video width="100%" id="v1" height="100%" controls>
+                <source src="Video/20.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <p>
+            为了选出操纵神兽瓦·鲁达尼亚的英杰，塞尔达造访了鼓隆族猛将达尔克尔所在之处。达尔克尔以勇猛果断之资接连击退怪物，不曾料到神武的他也有着意外的弱点。
+        </p>
+
+        <a href="#300" id="03"></a>
+        <p class="title 03" id="200"><span class="indicator">EX#3英杰米法之诗 <img src="Image/map.png"
+                                                                                   class="map-icon"/></span></p>
+        <div class="video" id="2">
+            <video width="100%" id="v2" height="100%" controls>
+                <source src="Video/21.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <p>
+            为了选出操纵神兽瓦·露塔的英杰，塞尔达造访了卓拉族王女米法所在之处。在那里看到了督促胞弟练习攀登瀑布以继承王族使命的米法的身影。
+        </p>
+
+        <a href="#400" id="04"></a>
+        <p class="title 04" id="300"><span class="indicator">EX#4英杰乌尔波扎之诗 <img src="Image/map.png"
+                                                                                       class="map-icon"/></span></p>
+        <div class="video" id="3">
+            <video width="100%" id="v3" height="100%" controls>
+                <source src="Video/22.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <p>
+            为了选出操纵神兽瓦·娜波力斯的英杰，塞尔达造访了格鲁德族长乌尔波扎所在之处。待仪式结束，与她一同漫步夜晚的沙漠时，塞尔达方知道乌尔波扎对自己的感情。
+        </p>
+
+        <a href="#500" id="05"></a>
+        <p class="title 05" id="400"><span class="indicator">EX#5英杰们的诗篇 <img src="Image/map.png"
+                                                                                   class="map-icon"/></span></p>
+        <div class="video" id="4">
+            <video width="100%" id="v4" height="100%" controls>
+                <source src="Video/23.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <p>
+            集结于海拉鲁城堡的林克等人被国王任命为英杰。仪式结束后，大家在城内中庭畅谈言欢。在米法的请求下，塞尔达用希卡之石的照相机拍下大家欢聚一堂的身影。
+        </p>
+
+        <a href="#600" id="06"></a>
+        <p class="title 1" id="500"><span class="indicator">#1不足为道的仪式 <img src="Image/map.png" class="map-icon"/></span>
+        </p>
+        <div class="video" id="5">
+            <video width="100%" id="v5" height="100%" controls>
+                <source src="Video/1.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <p>
+            英杰之一的林克被选为海拉鲁王族公主塞尔达的护卫骑士。在英杰达尔克尔的提议下，两人模仿起传说中的仪式。但是塞尔达语气沉重，愁眉不展。
+        </p>
+
+        <a href="#700" id="07"></a>
+        <p class="title 2" id="600"><span class="indicator">#2英杰力巴尔 <img src="Image/map.png"
+                                                                              class="map-icon"/></span></p>
+        <div class="video" id="6">
+            <video width="100%" id="v6" height="100%" controls>
+                <source src="Video/2.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <p>
+            讨伐灾厄盖侬时，被任命负责掩护林克的利特族英杰力巴尔表露出强烈的对抗意识......在利特村，他总是炫耀自己的特殊能力，不断地向林克发出挑衅的言行。
+        </p>
+
+        <a href="#800" id="08"></a>
+        <p class="title 3" id="700"><span class="indicator">#3决意与苦恼 <img src="Image/map.png"
+                                                                              class="map-icon"/></span></p>
+        <div class="video" id="7">
+            <video width="100%" id="v7" height="100%" controls>
+                <source src="Video/3.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <p>
+            塞尔达和林克为了调整神兽而前往鼓隆城。途中，塞尔达表明了想调查古物的决心。但是其后不久，向林克打听的塞尔达，她的背影中隐约流露出一丝苦恼......
+        </p>
+
+        <a href="#900" id="09"></a>
+        <p class="title 4" id="800"><span class="indicator">#4英杰达尔克尔 <img src="Image/map.png"
+                                                                                class="map-icon"/></span></p>
+        <div class="video" id="8">
+            <video width="100%" id="v8" height="100%" controls>
+                <source src="Video/4.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <p>
+            在死亡之山神兽训练的英杰达尔克尔正滔滔不绝地和同行的林克攀谈。倏然地动山摇，山石滑落向两人袭来......躲过一劫的达尔克尔对此异常事态不禁产生疑问。
+        </p>
+
+        <a href="#1000" id="010"></a>
+        <p class="title 5" id="900"><span class="indicator">#5塞尔达的焦躁 <img src="Image/map.png"
+                                                                                class="map-icon"/></span></p>
+        <div class="video" id="9">
+            <video width="100%" id="v9" height="100%" controls>
+                <source src="Video/5.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <p>
+            塞尔达继续对海拉鲁的众多神庙进行调查，却因为找不到进入神庙的方法而愈发焦躁。此时曾拒绝同行的林克出现在她的眼前......塞尔达仍然无法与林克和平相处，不禁出言不逊。
+        </p>
+
+        <a href="#1100" id="011"></a>
+        <p class="title 6" id="1000"><span class="indicator">#6英杰乌尔波扎 <img src="Image/map.png" class="map-icon"/></span>
+        </p>
+        <div class="video" id="10">
+            <video width="100%" id="v10" height="100%" controls>
+                <source src="Video/6.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <p>
+            被乌尔波扎叫来格鲁德沙漠的林克，在那里看到因疲于研究而沉入梦乡的塞尔达。乌尔波扎告诉了林克她的烦恼与过去，并且再次嘱托林克“好好保护她吧。”
+        </p>
+
+        <a href="#1200" id="012"></a>
+        <p class="title 7" id="1100"><span class="indicator">#7依盖队的凶刃 <img src="Image/map.png" class="map-icon"/></span>
+        </p>
+        <div class="video" id="11">
+            <video width="100%" id="v11" height="100%" controls>
+                <source src="Video/7.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <p>
+            不愿与林克同行而只身前去调查古物的塞尔达被仇视王族的依盖队所袭击......塞尔达拼命逃跑，最终还是被追上了。救下她的正是追寻她而来的林克。
+        </p>
+
+        <a href="#1300" id="013"></a>
+        <p class="title 8" id="1200"><span class="indicator">#8预兆 <img src="Image/map.png" class="map-icon"/></span>
+        </p>
+        <div class="video" id="12">
+            <video width="100%" id="v12" height="100%" controls>
+                <source src="Video/8.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <p>
+            与林克冰释前嫌的塞尔达担心他为了保护自己而不顾危险行事。袭击他们的怪物数量与日俱增，其中还有不少强健的种族，令人惴惴不安。
+        </p>
+
+        <a href="#1400" id="014"></a>
+        <p class="title 9" id="1300"><span class="indicator">#9静谧公主<img src="Image/map.png"
+                                                                            class="map-icon"/></span></p>
+        <div class="video" id="13">
+            <video width="100%" id="v13" height="100%" controls>
+                <source src="Video/9.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <p>
+            塞尔达一边用希卡之石拍摄照片一边向林克解说海拉鲁的花卉......她似乎对静谧公主这种花儿寄托着某种思念，但下一刻却因为引入眼帘的某物而兴奋不已......
+        </p>
+
+        <a href="#1500" id="015"></a>
+        <p class="title 10" id="1400"><span class="indicator">#10英杰米法 <img src="Image/map.png"
+                                                                               class="map-icon"/></span></p>
+        <div class="video" id="14">
+            <video width="100%" id="v14" height="100%" controls>
+                <source src="Video/10.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <p>
+            米法在神兽上治疗受伤的林克。拥有治愈之力的她平静地却坚决地说道：在接下来与灾厄盖侬的一战中，无论同伴或林克受到怎样的伤我都会治好。
+        </p>
+
+        <a href="#1600" id="016"></a>
+        <p class="title 11" id="1500"><span class="indicator">#11避雨 <img src="Image/map.png" class="map-icon"/></span>
+        </p>
+        <div class="video" id="15">
+            <video width="100%" id="v15" height="100%" controls>
+                <source src="Video/11.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <p>
+            林克与塞尔达在调查古物的途中遇上了突如其来的大雨，两人在树下避雨......塞尔达看到闲来无事而开始锻炼剑技的林克，不禁联想起自身的遭遇，意在言外地说起故事......
+        </p>
+        </p>
+
+        <a href="#1700" id="017"></a>
+        <p class="title 12" id="1600"><span class="indicator">#12父与女 <img src="Image/map.png"
+                                                                             class="map-icon"/></span></p>
+        <div class="video" id="16">
+            <video width="100%" id="v16" height="100%" controls>
+                <source src="Video/12.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <p>
+            塞尔达注视着在海拉鲁城堡进行的守护者实验并喜逐颜开，但这时她的父亲海拉鲁国王出现，塞尔达的脸色骤变......你该考虑的是力量觉醒！面对父亲的叱责，女儿只得抿唇不语。
+        </p>
+
+        <a href="#1800" id="018"></a>
+        <p class="title 13" id="1700"><span class="indicator">#13未觉醒之力 <img src="Image/map.png" class="map-icon"/></span>
+        </p>
+        <div class="video" id="17">
+            <video width="100%" id="v17" height="100%" controls>
+                <source src="Video/13.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <p>
+            塞尔达为觉醒封印之力而在力量之泉沐浴修行。但是修行持续了10年以上仍无任何进展，她自嘲是一无可取，强忍着泪水询问林克......我到底是哪里不足呢？
+        </p>
+
+        <a href="#1900" id="019"></a>
+        <p class="title 14" id="1800"><span class="indicator">#14前往拉聂耳山 <img src="Image/map.png"
+                                                                                   class="map-icon"/></span></p>
+        <div class="video" id="18">
+            <video width="100%" id="v18" height="100%" controls>
+                <source src="Video/14.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <p>
+            与林克一同调查古物的归来途中，塞尔达远眺着遥遥在望的拉聂尔山娓娓道来......也许前去那座山修行，我的力量就能觉醒。塞尔达将最后希望寄托于拉聂尔山并决意前往。
+        </p>
+
+        <a href="#2000" id="020"></a>
+        <p class="title 15" id="1900"><span class="indicator">#15大灾厄复活 <img src="Image/map.png" class="map-icon"/></span>
+        </p>
+        <div class="video" id="19">
+            <video width="100%" id="v19" height="100%" controls>
+                <source src="Video/15.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <p>
+            即使在拉聂尔山的智慧之泉进行修行也毫无成效，塞尔达心灰意冷地与林克一起下山。前来迎接的英杰之一米法将某个想法告诉塞尔达，就在此时，山间响起了复活的灾厄盖侬的咆哮声。
+        </p>
+
+        <a href="#2100" id="021"></a>
+        <p class="title 16" id="2000"><span class="indicator">#16绝望 <img src="Image/map.png" class="map-icon"/></span>
+        </p>
+        <div class="video" id="20">
+            <video width="100%" id="v20" height="100%" controls>
+                <source src="Video/16.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <p>
+            林克等人向灾厄盖侬发起挑战，等待他们的却是最坏的结果......神兽及守护者被盖侬夺去，城中百姓、四位英杰和海拉鲁国王付出了生命。滂沱大雨不停地拍打在塞尔达恸哭的背影上......
+        </p>
+
+        <a href="#2200" id="022"></a>
+        <p class="title 17" id="2100"><span class="indicator">#17塞尔达之觉醒 <img src="Image/map.png"
+                                                                                   class="map-icon"/></span></p>
+        <div class="video" id="21">
+            <video width="100%" id="v21" height="100%" controls>
+                <source src="Video/17.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <p>
+            从穷追不舍的守护者群中保护塞尔达而持续战斗的林克负了致命伤而倒下。挺身挡在想要袭击他的守护者面前，塞尔达终于觉醒了封印之力......
+        </p>
+
+
+        <p class="title 18" id="2200"><span class="indicator">#18大师之剑 <img src="Image/map.png"
+                                                                               class="map-icon"/></span></p>
+        <div class="video" id="22">
+            <video width="100%" id="v22" height="100%" controls>
+                <source src="Video/18.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <p>
+            塞尔达带着大师之剑前去德库树跟前，将剑交给了巨木，塞尔达想托付它向假以时日终会前来此地的林克转告留言......德库树劝告应由她亲口传达，塞尔达颌首微笑。
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </p>
+        <p id="fin">Fin.</p>
+    </div>
+</div>
+
+<div>
+    <img id="logoWidget" class="esri-widget" src="Image/logo.png"/>
+    <img id="soundWidget" class="esri-widget" src="Image/tik-tok.png"/>
+    <img id="labelWidget" class="esri-widget" src="Image/tags.png"/>
+    <img id="homeWidget" class="esri-widget" src="Image/home.png"/>
+    <img id="compassWidget" class="esri-widget" src="Image/navigation.png"/>
+</div>
+<div id="bottomPanel">
+    <img id="cube" class="bottomLogo" src="Image/cube.png"/>
+    <img id="rect" class="bottomLogo" src="Image/rect.png"/>
+    <img id="side" class="bottomLogo" src="Image/side.png"/>
+</div>
+<footer id="footWidget">
+    由<a href="https://space.bilibili.com/22858170" target="_blank">LinkZY</a>制作，仅用于学习交流
+</footer>
+</body>
+</html>
